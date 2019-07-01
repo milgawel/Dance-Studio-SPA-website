@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+
 }
+
+// font-family: 'Oswald', sans-serif;
 
 body {
   min-height: 200vh;
@@ -10,3 +14,6 @@ body {
 }
 
 @import "Header";
+@import "FixedNavBar";
+@import "AboutUs";
+@import "Schedule";

@@ -1,0 +1,129 @@
+section.schedule {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/balet.jpg");
+  background-size: cover;
+  background-position: 0 60%;
+  // border: 3px solid yellow;
+
+  h1.schedule {
+    display: flex;
+    justify-content: center;
+    margin: 7vh auto;
+    color: rgba(255, 255, 255, 0.964);
+    letter-spacing: 2px;
+    font-size: 50px;
+  }
+
+  div.week {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 60vh;
+    margin: 10vh auto;
+
+    // flex-basis: 20%;
+
+    div.row {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+
+      div {
+        width: 14%;
+        border: 4px solid red;
+        border-radius: 4vh;
+      }
+
+      div.schedule_none {
+        border: none;
+      }
+
+      div.schedule_hipHop_amator {
+        height: 10vh;
+        border: 4px solid yellow;
+        background-image: linear-gradient(to bottom, green, yellow);
+
+        p {
+          color: black;
+          font-weight: bold;
+        }
+      }
+
+      div.schedule_breakDance_amator {
+        height: 10vh;
+        border: 4px solid orange;
+        background-image: linear-gradient(to bottom, red, orange);
+
+        p {
+          color: black;
+          font-weight: bold;
+        }
+      }
+
+      div.schedule_jazz_amator {
+        height: 10vh;
+        border: 4px solid yellow;
+        background-image: linear-gradient(to bottom, blue, yellow);
+
+        p {
+          color: black;
+          font-weight: bold;
+        }
+      }
+
+      div.schedule_balet_amator {
+        height: 10vh;
+        border: 4px solid rgb(196, 10, 243);
+        background-image: linear-gradient(to bottom, rgb(196, 10, 243), yellow);
+
+        p {
+          color: black;
+          font-weight: bold;
+        }
+      }
+
+
+      div.schedule_day {
+        border: 4px solid #EB0165;
+        background-image: linear-gradient(to bottom, #8B144C, #EB0165);
+
+        p {
+          color: black;
+          font-weight: bold;
+        }
+      }
+
+      div.schedule_time {
+        height: 6vh;
+        margin: auto 0;
+        border: 4px solid rgb(25, 129, 155);
+        background-image: linear-gradient(to bottom, rgb(16, 40, 158), rgb(25, 129, 155));
+
+      }
+
+      p {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: -1px 5px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 13px;
+      }
+
+
+      p.schedule_time {
+        height: 100%;
+      }
+
+      p:nth-child(1) {
+        line-height: 5vh;
+        margin-top: auto;
+      }
+
+    }
+  }
+}

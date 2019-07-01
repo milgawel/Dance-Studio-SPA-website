@@ -1,17 +1,13 @@
 header.main {
   width: 100%;
   height: 100vh;
-  font-family: 'Roboto', sans-serif;
-  // border: 2px solid yellow;
-  background-image: url('../images/headerBackground.png');
+  background-image: url('../images/headerBackgroundNOWY.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto 170%;
 
 
   ul {
-    // position: absolute;
-    // border: 4px solid red;
     margin: 0 auto;
     padding-top: 20px;
 
@@ -20,7 +16,6 @@ header.main {
       width: 70%;
       margin: 0 auto;
       display: flex;
-      // background-color: #fff;
 
       a {
         text-decoration: none;

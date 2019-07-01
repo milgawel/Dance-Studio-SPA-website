@@ -7,42 +7,256 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
   <!--##### FIXED MENU ####-->
   <section class="fixedMenu">
+    <ul>
+      <li>
+        <img src="./images/logoSmall.png" alt="małe logo">
+        <a class="spacer" href="#"></a>
+        <a id="button_aboutUs" href="#">O nas</a>
+        <a id="button_schedule" href="#">Harmonogram</a>
+        <a id="button_prices" href="#">Cennik</a>
+        <a id="button_Contact" href="#">Kontakt</a>
+        <a id="button_signUp" href="#">Zapisy na zajęcia</a>
+      </li>
+    </ul>
   </section>
 
   <!--###### MAIN HEADER ######-->
   <header class="main">
     <ul>
       <li>
-        <a href="#">O nas</a>
-        <a href="#">Harmonogram</a>
-        <a href="#">Cennik</a>
-        <a href="#">Zapisz się na zajęcia</a>
-        <a href="#">kontakt</a>
+        <a id="button_aboutUs" href="#">O nas</a>
+        <a id="button_schedule" href="#">Harmonogram</a>
+        <a id="button_prices" href="#">Cennik</a>
+        <a id="button_Contact" href="#">Kontakt</a>
+        <a id="button_signUp" href="#">Zapisy na zajęcia</a>
       </li>
     </ul>
-    <img class="header" src="images/logoBig.png" alt="">
+    <img class="header" src="images/logoBig.png" alt="duże logo">
     <a class="contact" href="#">Zapraszamy do kontaktu</a>
   </header>
-
-
-
+  <img class="fixedBackgroundPhoto" src="./images/fixedBackgroundPhoto.png" alt="tło" class="fixedBackground">
 
   <!--###### ABOUT US ######-->
-  <section class="aboutUs"></section>
+  <section class="aboutUs">
+    <h2>Nasza szkoła zajmuje się róznymi gatunkami tańca, a nasi doświadczeni choreografowie pomogą w spaleniu zbędnych
+      kalorii :)</h2>
+    <div class="danceStyles_menu">
+      <ul>
+        <li>
+          <button id="hipHop"> Hip-hop</button>
+          <button id="breakDance"> Break Dance</button>
+          <button id="jazz"> Jazz</button>
+          <button id="balet"> Balet</button>
+        </li>
+      </ul>
+    </div>
+    <div class="danceStyles_chosen">
+      <div class="regular hipHop_disabled active">
+        <h2>Hip Hop to rodzaj tańca, wymyślony przez członków kultury hip-hop, wymagający dobrych predyspozycji
+          fizycznych,
+          kondycji oraz dobrego poczucia rytmu.</h2>
+        <div class="teacher">
+          <img src="./images/Man1.png" alt="Choreograf1">
+          <div class="teacher_description">
+            <p>Michał Nowakowski</p>
+            <p>Poziom zaawansowany, poniedziałek-środa 15:00 - 18:00</p>
+          </div>
+        </div>
+        <button class="button_teacher" id="button_signUp" href="#">Zapisz się na Hip-hop</button>
+      </div>
 
-  <!--###### TEACHERS ######-->
-  <section class="teachers"></section>
 
-  <!--###### ACTIVITIES TABLE ######-->
-  <section class="activities"></section>
+      <div class="regular breakDance_disabled">
+        <h2>Break dance to rodzaj specyficznego i unikatowego tańca z dużą liczbą elementów siłowo-sprawnościowych, oraz
+          kroków
+          wykonywanych „w parterze”, czyli rękami i nogami (a często całym ciałem) na ziemi.</h2>
+        <div class="teacher">
+          <img src="./images/Man2.png" alt="Choreograf2">
+          <div class="teacher_description">
+            <p>Maciej Krzywda</p>
+            <p>Poziom zaawansowany, poniedziałek-środa 18:00 - 21:00</p>
+          </div>
+        </div>
+        <button class="button_teacher" id="button_signUp" href="#">Zapisz się na Break Dance</button>
+      </div>
 
-  <!--###### PRICE LIST ######-->
+
+      <div class="regular jazz_disabled">
+        <h2> Jazz est gatunkiem zawierającym w sobie elementy baletu, tańca modern oraz tańca akrobatycznego. Podstawą
+          są w
+          nim jedynie dwa elementy: rytm i policentryzm. Jest
+          To trudna technika tańca, wymagająca rozciągniętego ciała i siły</h2>
+        <div class="teacher">
+          <img src="./images/Woman1.png" alt="Choreograf1">
+          <div class="teacher_description">
+            <p>Kamila Nowaczek</p>
+            <p>Poziom zaawansowany, czwartek-sobota 18:00 - 21:00</p>
+          </div>
+        </div>
+        <button class="button_teacher" id="button_signUp" href="#">Zapisz się na Jazz</button>
+      </div>
+
+
+      <div class="regular balet_disabled">
+        <h2>Balet to typ widowiska teatralnego, w którym głównym środkiem wyrazu jest
+          taniec skomponowany przez choreografa i wykonywany przez tancerzy z towarzyszeniem muzyki, utwór
+          choreograficzny.
+        </h2>
+        <div class="teacher">
+          <img src="./images/Woman2.png" alt="Choreograf1">
+          <div class="teacher_description">
+            <p>Natalia Myślicka</p>
+            <p>Poziom zaawansowany, czwartek-sobota 15:00 - 18:00</p>
+          </div>
+        </div>
+        <button class="button_teacher" id="button_signUp" href="#">Zapisz się na balet</button>
+      </div>
+
+  </section>
+
+  <!--###### SCHEDULE TABLE ######-->
+  <section class="schedule">
+    <h1 class="schedule">HARMONOGRAM</h1>
+    <div class="week">
+      <div class="row hours">
+        <div class="schedule_none">
+          <!-- <p>Pusty</p> -->
+        </div>
+        <div class="schedule_day">
+          <p>poniedziałek</p>
+        </div>
+        <div class="schedule_day">
+          <p>wtorek</p>
+        </div>
+        <div class="schedule_day">
+          <p>środa</p>
+        </div>
+        <div class="schedule_day">
+          <p>czwartek</p>
+        </div>
+        <div class="schedule_day">
+          <p>piątek</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="schedule_time">
+          <p class="schedule_time">15:00-16:30</p>
+        </div>
+        <div class="schedule_hipHop_amator">
+          <p>hip-hop</p>
+          <p>początkujący od 9 lat</p>
+        </div>
+        <div class="schedule_hipHop_amator">
+          <p>hip-hop</p>
+          <p>początkujący od 9 lat</p>
+        </div>
+        <div class="schedule_hipHop_amator">
+          <p>hip-hop</p>
+          <p>początkujący od 9 lat</p>
+        </div>
+        <div class="schedule_hipHop_amator">
+          <p>break-dance</p>
+          <p>początkujący od 9 lat</p>
+        </div>
+        <div class="schedule_hipHop_amator">
+          <p>break-dance</p>
+          <p>początkujący od 9 lat</p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="schedule_time">
+          <p class="schedule_time">16:30-18:00</p>
+        </div>
+        <div class="schedule_breakDance_amator">
+          <p>hip-hop</p>
+          <p>zaawansowani</p>
+        </div>
+        <div class="schedule_breakDance_amator">
+          <p>hip-hop</p>
+          <p>zaawansowani</p>
+        </div>
+        <div class="schedule_breakDance_amator">
+          <p>hip-hop</p>
+          <p>zaawansowani</p>
+        </div>
+        <div class="schedule_breakDance_amator">
+          <p>break-dance</p>
+          <p>zaawansowani</p>
+        </div>
+        <div class="schedule_breakDance_amator">
+          <p>break-dance</p>
+          <p>zaawansowani</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="schedule_time">
+          <p class="schedule_time">18:00-19:30</p>
+        </div>
+        <div class="schedule_jazz_amator">
+          <p>Jazz</p>
+          <p>początkujący od 9 lat</p>
+        </div>
+        <div class="schedule_jazz_amator">
+          <p>Jazz</p>
+          <p>początkujący od 9 lat</p>
+        </div>
+        <div class="schedule_jazz_amator">
+          <p>Jazz</p>
+          <p>początkujący od 9 lat</p>
+        </div>
+        <div class="schedule_jazz_amator">
+          <p>balet</p>
+          <p>początkujący od 9 lat</p>
+        </div>
+        <div class="schedule_jazz_amator">
+          <p>balet</p>
+          <p>początkujący od 9 lat</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="schedule_time">
+          <p class="schedule_time">19:30-21:00</p>
+        </div>
+        <div class="schedule_balet_amator">
+          <p>Jazz</p>
+          <p>zaawansowani</p>
+        </div>
+        <div class="schedule_balet_amator">
+          <p>Jazz</p>
+          <p>zaawansowani</p>
+        </div>
+        <div class="schedule_balet_amator">
+          <p>Jazz</p>
+          <p>zaawansowani</p>
+        </div>
+        <div class="schedule_balet_amator">
+          <p>balet</p>
+          <p>zaawansowani</p>
+        </div>
+        <div class="schedule_balet_amator">
+          <p>balet</p>
+          <p>zaawansowani</p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!--###### PRICES LIST ######-->
   <section class="cost"></section>
 
   <!--###### SOCIAL MEDIA ######-->
