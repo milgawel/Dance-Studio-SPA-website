@@ -1,0 +1,2 @@
+*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#000}body{min-height:200vh}header.main{width:100%;font-family:'Roboto', sans-serif}header.main ul{border:4px solid red;margin:0 auto}header.main ul li{width:60%;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex}header.main ul li a{text-decoration:none;font-size:20px;text-transform:uppercase;margin:20px auto;color:white}header.main h1{color:red}header.main h2{color:red}header.main button{color:white}
+/*# sourceMappingURL=styles.min.css.map */
