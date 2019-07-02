@@ -64,3 +64,34 @@ header.main {
     color: white;
   }
 }
+
+a.scrollToTopButton {
+
+  z-index: 2;
+  padding: 2vh 2vh;
+  position: fixed;
+  bottom: 5vh;
+  left: 12vh;
+  background-image: linear-gradient(to bottom, #2444DB, #24B5DB);
+  border: none;
+  border-radius: 15px;
+  transform: rotate(180deg);
+  cursor: pointer;
+
+
+  i {
+    font-size: 40px;
+    color: #8B144C;
+    animation: blink 2s infinite ease;
+  }
+
+  @keyframes blink {
+    0% {
+      color: #8B144C;
+    }
+
+    100% {
+      color: white;
+    }
+  }
+}
