@@ -6,6 +6,27 @@ $('header').mousemove(function (e) {
   $(this).css('background-position', moveX + 'px ' + moveY + 'px')
 })
 
+// ##### FIXED NAVBAR #####
+
+const body = document.body;
+const element = document.getElementById("navBar");
+const btnToTop = document.querySelector(".scrollToTopButton");
+
+document.addEventListener("scroll", function () {
+  let scrollAmt = window.pageYOffset || document.documentElement.scrollTop;
+  if (window.innerHeight / 1.2 >= scrollAmt)
+    element.style.display = "none";
+  else
+    element.style.display = "block";
+});
+document.addEventListener("scroll", function () {
+  let scrollAmt = window.pageYOffset || document.documentElement.scrollTop;
+  if (window.innerHeight / 2 >= scrollAmt)
+    btnToTop.style.display = "none";
+  else
+    btnToTop.style.display = "block";
+});
+
 // ###########   NAVIGATION   #############
 
 const button_aboutUs = document.querySelector('.button_aboutUs');
@@ -16,19 +37,19 @@ const button_signUp = document.querySelector('.button_signUp');
 const scrollToTopButton = document.querySelector('.scrollToTopButton');
 
 button_aboutUs.addEventListener('click', function scrollToElement() {
-  window.scrollTo(0, 100 * window.innerHeight / 100);
+  window.scrollTo(0, 89 * window.innerHeight / 100);
 });
 
 button_schedule.addEventListener('click', function scrollToElement() {
-  window.scrollTo(0, 200 * window.innerHeight / 100);
+  window.scrollTo(0, 195 * window.innerHeight / 100);
 });
 
 button_prices.addEventListener('click', function scrollToElement() {
-  window.scrollTo(0, 300 * window.innerHeight / 100);
+  window.scrollTo(0, 296 * window.innerHeight / 100);
 });
 
 button_contact.addEventListener('click', function scrollToElement() {
-  window.scrollTo(0, 400 * window.innerHeight / 100);
+  window.scrollTo(0, 396 * window.innerHeight / 100);
 });
 
 scrollToTopButton.addEventListener('click', function scrollToElement() {
@@ -42,22 +63,22 @@ const navBar_button_contact = document.querySelector('.navBar_button_contact');
 const navBar_button_signUp = document.querySelector('.navBar_button_signUp');
 
 navBar_button_aboutUs.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 90 * window.innerHeight / 100);
+  window.scrollTo(0, 89 * window.innerHeight / 100);
   e.preventDefault();
 });
 
 navBar_button_schedule.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 190 * window.innerHeight / 100);
+  window.scrollTo(0, 195 * window.innerHeight / 100);
   e.preventDefault();
 });
 
 navBar_button_prices.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 290 * window.innerHeight / 100);
+  window.scrollTo(0, 296 * window.innerHeight / 100);
   e.preventDefault();
 });
 
 navBar_button_contact.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 390 * window.innerHeight / 100);
+  window.scrollTo(0, 396 * window.innerHeight / 100);
   e.preventDefault();
 });
 

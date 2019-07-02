@@ -1,10 +1,24 @@
-div.fixedMenu {
-  display: block;
+section.fixed_navBar {
+  display: none;
+  // opacity: 0;
   z-index: 33;
   position: fixed;
   width: 100%;
   height: 12vh;
   background-image: linear-gradient(to bottom, rgb(1, 61, 75), #000);
+  transition: .3s;
+  animation: fadeIn 1s;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
 
   ul {
     position: relative;
@@ -14,7 +28,6 @@ div.fixedMenu {
     margin-right: 5vw;
 
     li {
-      display: flex;
       display: flex;
 
       img {
@@ -41,7 +54,6 @@ div.fixedMenu {
         color: black;
         background-image: linear-gradient(to bottom, #2444DB, #24B5DB);
       }
-
     }
   }
 }

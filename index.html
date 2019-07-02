@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Revoultion Dance Center</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -15,29 +15,29 @@
 
 <body>
   <!--##### FIXED MENU ####-->
-  <div class="fixedMenu">
+  <section class="fixed_navBar" id="navBar">
     <ul>
       <li>
         <img src="./images/logoSmall.png" alt="małe logo">
         <a class="spacer" href="#"></a>
-        <a class="navBar_button_aboutUs" href="#">O nas</a>
-        <a class="navBar_button_schedule" href="#">Harmonogram</a>
-        <a class="navBar_button_prices" href="#">Cennik</a>
-        <a class="navBar_button_contact" href="#">Kontakt</a>
-        <a class="navBar_button_signUp" href="#">Zapisy na zajęcia</a>
+        <a class="navBar_button_aboutUs" href="#one">O nas</a>
+        <a class="navBar_button_schedule" href="#two">Harmonogram</a>
+        <a class="navBar_button_prices" href="#three">Cennik</a>
+        <a class="navBar_button_contact" href="#four">Kontakt</a>
+        <a class="navBar_button_signUp" href="#">Zapisy</a>
       </li>
     </ul>
-  </div>
+  </section>
 
   <!--###### MAIN HEADER ######-->
-  <header class="main">
+  <header class="main" id="header">
     <ul>
       <li>
         <a class="button_aboutUs" href="#">O nas</a>
         <a class="button_schedule" href="#">Harmonogram</a>
         <a class="button_prices" href="#">Cennik</a>
         <a class="button_contact" href="#">Kontakt</a>
-        <a class="button_signUp" href="#">Zapisy na zajęcia</a>
+        <a class="button_signUp" href="#">Zapisy</a>
       </li>
     </ul>
     <img class="header" src="images/logoBig.png" alt="duże logo">
@@ -47,7 +47,7 @@
   <a class="scrollToTopButton"><i class="fas fa-arrow-down"></i></a>
 
   <!--###### ABOUT US ######-->
-  <section class="aboutUs">
+  <section class="aboutUs" id="one">
     <h2>Nasza szkoła zajmuje się róznymi gatunkami tańca, a nasi doświadczeni choreografowie pomogą w spaleniu zbędnych
       kalorii :)</h2>
     <div class="danceStyles_menu">
@@ -125,7 +125,7 @@
   </section>
 
   <!--###### SCHEDULE TABLE ######-->
-  <section class="schedule">
+  <section class="schedule" id="two">
     <h1 class="schedule">HARMONOGRAM</h1>
     <div class="week">
       <div class="row hours">
@@ -260,7 +260,7 @@
   </section>
 
   <!--###### PRICES LIST ######-->
-  <section class="cost">
+  <section class="cost" id="three">
     <h1 class="cost">cennik</h1>
     <div class="price_list">
       <div class="price_position">
@@ -306,7 +306,7 @@
   </section>
 
   <!--###### CONTACT ######-->
-  <section class="contact">
+  <section class="contact" id="four">
     <h1 class="contact">Skontaktuj się z nami</h1>
     <div class="contact_container">
       <div id="map"></div>
