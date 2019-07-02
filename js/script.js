@@ -40,7 +40,6 @@ const navBar_button_schedule = document.querySelector('.navBar_button_schedule')
 const navBar_button_prices = document.querySelector('.navBar_button_prices');
 const navBar_button_contact = document.querySelector('.navBar_button_contact');
 const navBar_button_signUp = document.querySelector('.navBar_button_signUp');
-const navBar_scrollToTopButton = document.querySelector('.navBar_scrollToTopButton');
 
 navBar_button_aboutUs.addEventListener('click', function scrollToElement(e) {
   window.scrollTo(0, 90 * window.innerHeight / 100);
@@ -59,11 +58,6 @@ navBar_button_prices.addEventListener('click', function scrollToElement(e) {
 
 navBar_button_contact.addEventListener('click', function scrollToElement(e) {
   window.scrollTo(0, 390 * window.innerHeight / 100);
-  e.preventDefault();
-});
-
-navBar_scrollToTopButton.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 0);
   e.preventDefault();
 });
 
