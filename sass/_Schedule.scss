@@ -34,7 +34,7 @@ section.schedule {
       div {
         width: 14%;
         border: 4px solid red;
-        border-radius: 4vh;
+        border-radius: 3vh;
       }
 
       div.schedule_none {
@@ -54,8 +54,8 @@ section.schedule {
 
       div.schedule_breakDance_amator {
         height: 10vh;
-        border: 4px solid orange;
-        background-image: linear-gradient(to bottom, red, orange);
+        border: 4px solid yellow;
+        background-image: linear-gradient(to bottom, red, yellow);
 
         p {
           color: black;
@@ -76,7 +76,7 @@ section.schedule {
 
       div.schedule_balet_amator {
         height: 10vh;
-        border: 4px solid rgb(196, 10, 243);
+        border: 4px solid yellow;
         background-image: linear-gradient(to bottom, rgb(196, 10, 243), yellow);
 
         p {

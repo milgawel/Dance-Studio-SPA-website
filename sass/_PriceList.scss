@@ -1,0 +1,133 @@
+section.cost {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/background2222.jpg");
+  background-size: cover;
+  background-position: 0 50%;
+
+  h1.cost {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 7vh;
+    color: rgba(255, 255, 255, 0.964);
+    letter-spacing: 2px;
+    font-size: 50px;
+    text-transform: uppercase;
+    transition: .3s;
+    cursor: default;
+  }
+
+  h1.cost:hover {
+    color: purple;
+  }
+
+  div.price_list {
+    height: 70vh;
+    width: 60%;
+    margin: auto auto;
+
+    div.price_position {
+      display: flex;
+      flex-direction: row;
+      margin: 3vh 0;
+      justify-content: space-around;
+      align-items: center;
+
+      p {
+        color: white;
+        display: flex;
+        justify-content: center;
+        padding: 10px 15px;
+        font-size: 25px;
+        border-radius: 50px;
+        color: #000;
+        font-weight: bold;
+      }
+
+      p.price_name {
+        border: 6px solid #2444DB;
+        background-image: linear-gradient(to bottom, #2444DB, #24B5DB);
+        width: 50%;
+        transition: .3s;
+      }
+
+      p.price_name:hover {
+        border: 6px solid purple;
+      }
+
+      p.spacer {
+        width: 30%;
+      }
+
+      p.price_value {
+        border: 6px solid purple;
+        border-radius: 4vh;
+        width: 15%;
+        background-image: linear-gradient(to bottom, #8B144C, #EB0165);
+        margin-right: 10vh;
+        transition: .3s;
+      }
+
+      p.price_value:hover {
+        border: 6px solid #2444DB;
+      }
+    }
+  }
+
+
+
+  img.icon_general {
+    height: 6vh;
+    opacity: 0.8;
+  }
+
+  div#icon1 {
+    position: absolute;
+    top: 370vh;
+    left: 15vw;
+  }
+
+  div#icon2 {
+    position: absolute;
+    top: 330vh;
+    left: 80vw;
+  }
+
+  div#icon3 {
+    position: absolute;
+    top: 360vh;
+    left: 55vw;
+  }
+
+  div#icon4 {
+    position: absolute;
+    top: 350vh;
+    left: 10vw;
+  }
+
+  div#icon5 {
+    position: absolute;
+    top: 315vh;
+    left: 70vw;
+  }
+
+  div#icon6 {
+    position: absolute;
+    top: 395vh;
+    left: 30vw;
+  }
+
+  div#icon7 {
+    position: absolute;
+    top: 315vh;
+    left: 30vw;
+  }
+
+  div#icon8 {
+    position: absolute;
+    top: 380vh;
+    left: 80vw;
+  }
+
+}
