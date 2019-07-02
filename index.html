@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.min.css">
@@ -302,14 +304,82 @@
     <div id="icon8"><img class="icon_general" src="./images/wink.png" alt=""></div>
   </section>
 
-  <!--###### SOCIAL MEDIA ######-->
-  <section class="socialMedia"></section>
+  <!--###### CONTACT ######-->
+  <section class="contact">
+    <h1 class="contact">Skontaktuj się z nami</h1>
+    <div class="contact_container">
+      <div id="map"></div>
+      <div class="contact_data">
+        <h2>adres</h2>
+        <p> Osiedle Zgody 5, Kraków</p>
+        <h2>numer telefonu</h2>
+        <p>+48 880450654</p>
+        <h2>email</h2>
+        <p>evolutiondancecenter@gmail.com</p>
+        <h2>godziny otwarcia</h2>
+        <p>poniedziałek-piątek, 15:00-21:00</p>
+      </div>
+    </div>
+  </section>
 
   <!--###### FOOTER ######-->
-  <footer></footer>
+  <footer>
+    <div>
+      <ul className="logo">
+        <li>
+          <p>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>Miłosz Gaweł</p>
+        </li>
+      </ul>
+      <ul className="socialMedia">
+        <li>
+          <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-facebook-f"></i>
+              </a>
+        </li>
+        <li>
+          <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-twitter"></i>
+              </a>
+        </li>
+        <li>
+          <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-google"></i>
+              </a>
+        </li>
+        <li>
+          <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <i class="fab fa-instagram"></i>
+              </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABrShKgLivFKP_Bj6-dRm7htzWVlIQcCI&callback=initMap">
+  </script>
   <script src="./js/script.js"></script>
 </body>
 

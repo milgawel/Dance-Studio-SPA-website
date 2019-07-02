@@ -1,8 +1,13 @@
+// #######    HEADER     #########
+
 $('header').mousemove(function (e) {
   let moveX = (e.pageX * -0.5 / 15 - 25);
   let moveY = (e.pageY * -0.5 / 15 - 255);
   $(this).css('background-position', moveX + 'px ' + moveY + 'px')
 })
+
+
+// ######### PRICE LIST #########
 
 let object1 = $('#icon1');
 let object2 = $('#icon2');
@@ -77,3 +82,21 @@ $('body').mousemove(function (e) {
     'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(20deg)'
   });
 });
+
+// ########   CONTACT PAGE    #########
+
+function initMap() {
+  const studio = {
+    lat: 50.075605,
+    lng: 20.035321
+  };
+  let map = new google.maps.Map(
+    document.getElementById('map'), {
+      zoom: 14,
+      center: studio
+    });
+  var marker = new google.maps.Marker({
+    position: studio,
+    map: map
+  });
+}

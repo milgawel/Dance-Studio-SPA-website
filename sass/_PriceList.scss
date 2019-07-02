@@ -8,10 +8,11 @@ section.cost {
   h1.cost {
     display: flex;
     justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
     margin: 0 auto;
     padding-top: 7vh;
     color: rgba(255, 255, 255, 0.964);
-    letter-spacing: 2px;
     font-size: 50px;
     text-transform: uppercase;
     transition: .3s;

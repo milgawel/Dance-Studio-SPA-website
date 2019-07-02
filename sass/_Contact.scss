@@ -1,0 +1,64 @@
+section.contact {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgb(95, 18, 54), #2444DB);
+
+
+  h1.contact {
+    display: flex;
+    justify-content: center;
+    margin: 0vh auto;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    color: rgba(255, 255, 255, 0.964);
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 4px;
+    font-size: 50px;
+    text-transform: uppercase;
+    transition: .3s;
+    cursor: default;
+  }
+
+  div.contact_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 4px solid green;
+
+  }
+
+  div.contact_data {
+    width: 40%;
+    height: 70vh;
+    font-family: 'Oswald', sans-serif;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 35px;
+      justify-content: center;
+      display: flex;
+      text-transform: uppercase;
+      color: rgb(255, 108, 172);
+      margin: 1vh 0;
+    }
+
+    p {
+      font-family: 'Oswald', sans-serif;
+      font-size: 30px;
+      color: white;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 3vh;
+    }
+  }
+
+  #map {
+    width: 45%;
+    height: 70vh;
+    background-color: red;
+    margin: 2vh auto;
+  }
+}
