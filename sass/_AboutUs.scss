@@ -50,6 +50,19 @@ section.aboutUs {
 
   div.danceStyles_chosen {
     div.regular {
+      transition: .3s;
+      animation: fadeIn 1s;
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
       h2 {
         font-family: 'Oswald', sans-serif;
         text-align: center;

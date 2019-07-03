@@ -35,6 +35,7 @@ const button_prices = document.querySelector('.button_prices');
 const button_contact = document.querySelector('.button_contact');
 const button_signUp = document.querySelector('.button_signUp');
 const scrollToTopButton = document.querySelector('.scrollToTopButton');
+const header_contact_button = document.getElementById('header_contact_button')
 
 button_aboutUs.addEventListener('click', function scrollToElement() {
   window.scrollTo(0, 89 * window.innerHeight / 100);
@@ -55,6 +56,9 @@ button_contact.addEventListener('click', function scrollToElement() {
 scrollToTopButton.addEventListener('click', function scrollToElement() {
   window.scrollTo(0, 0);
 });
+header_contact_button.addEventListener('click', function scrollToElement() {
+  window.scrollTo(0, 396 * window.innerHeight / 100);
+});
 
 const navBar_button_aboutUs = document.querySelector('.navBar_button_aboutUs');
 const navBar_button_schedule = document.querySelector('.navBar_button_schedule');
@@ -73,7 +77,7 @@ navBar_button_schedule.addEventListener('click', function scrollToElement(e) {
 });
 
 navBar_button_prices.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 296 * window.innerHeight / 100);
+  window.scrollTo(0, 300 * window.innerHeight / 100);
   e.preventDefault();
 });
 
@@ -81,6 +85,52 @@ navBar_button_contact.addEventListener('click', function scrollToElement(e) {
   window.scrollTo(0, 396 * window.innerHeight / 100);
   e.preventDefault();
 });
+// ######### ABOUT US #############
+const lessons_hipHop = document.getElementById('lessons_hipHop');
+const lessons_breakDance = document.getElementById('lessons_breakDance');
+const lessons_jazz = document.getElementById('lessons_jazz');
+const lessons_ballet = document.getElementById('lessons_ballet');
+const button_hipHop = document.getElementById('hipHop');
+const button_breakDance = document.getElementById('breakDance');
+const button_jazz = document.getElementById('jazz');
+const button_ballet = document.getElementById('balet');
+
+function addHipHop() {
+  lessons_hipHop.classList.add("active");
+  lessons_breakDance.classList.remove("active");
+  lessons_jazz.classList.remove("active");
+  lessons_ballet.classList.remove("active");
+}
+
+button_hipHop.addEventListener('click', addHipHop);
+
+function addBreakDance() {
+  lessons_hipHop.classList.remove("active");
+  lessons_breakDance.classList.add("active");
+  lessons_jazz.classList.remove("active");
+  lessons_ballet.classList.remove("active");
+}
+
+button_breakDance.addEventListener('click', addBreakDance);
+
+function addJazz() {
+  lessons_hipHop.classList.remove("active");
+  lessons_breakDance.classList.remove("active");
+  lessons_jazz.classList.add("active");
+  lessons_ballet.classList.remove("active");
+}
+
+button_jazz.addEventListener('click', addJazz);
+
+function addBallet() {
+  lessons_hipHop.classList.remove("active");
+  lessons_breakDance.classList.remove("active");
+  lessons_jazz.classList.remove("active");
+  lessons_ballet.classList.add("active");
+}
+
+button_ballet.addEventListener('click', addBallet);
+
 
 // ######### PRICE LIST #########
 
@@ -179,3 +229,52 @@ function initMap() {
     map: map
   });
 }
+// ######## ENROLLMENT FORM ##########
+
+const header_form_button_test = document.getElementById('header_form_button');
+const blur = document.getElementById('blur_background');
+const form = document.getElementById('form');
+const form_button_close = document.getElementById('form_button_close');
+
+const fixed_navbar_button_form = document.getElementById('fixed_navbar_button_form');
+
+const button_signUp1 = document.getElementById('button_signUp1');
+const button_signUp2 = document.getElementById('button_signUp2');
+const button_signUp3 = document.getElementById('button_signUp3');
+const button_signUp4 = document.getElementById('button_signUp4');
+
+function openForm(e) {
+  blur.classList.add("active");
+  form.classList.add("active");
+  e.preventDefault();
+}
+
+function closeForm(e) {
+  blur.classList.remove('active');
+  form.classList.remove('active');
+  e.preventDefault();
+}
+
+header_form_button_test.addEventListener('click', openForm);
+form_button_close.addEventListener('click', closeForm);
+
+button_signUp1.addEventListener('click', openForm);
+button_signUp2.addEventListener('click', openForm);
+button_signUp3.addEventListener('click', openForm);
+button_signUp4.addEventListener('click', openForm);
+fixed_navbar_button_form.addEventListener('click', openForm);
+blur.addEventListener('click', closeForm);
+
+
+// // ##########
+
+// const button_ballet = document.getElementById('balet');
+
+// function addHipHop() {
+//   lessons_hipHop.classList.add("active");
+//   lessons_breakDance.classList.remove("active");
+//   lessons_jazz.classList.remove("active");
+//   lessons_ballet.classList.remove("active");
+// }
+
+// button_hipHop.addEventListener('click', addHipHop);

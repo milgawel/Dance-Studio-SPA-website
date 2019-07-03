@@ -24,10 +24,17 @@
         <a class="navBar_button_schedule" href="#two">Harmonogram</a>
         <a class="navBar_button_prices" href="#three">Cennik</a>
         <a class="navBar_button_contact" href="#four">Kontakt</a>
-        <a class="navBar_button_signUp" href="#">Zapisy</a>
+        <a class="navBar_button_signUp" href="#" id="fixed_navbar_button_form">Zapisy</a>
       </li>
     </ul>
   </section>
+  <section class="fixed_window_enroll " id="blur_background">
+  </section>
+  <div class="fixed_window_form " id="form">
+    <button class="close_fixed_window" id="form_button_close"><i class="far fa-times-circle"></i>
+    </button>
+    <h1>CIMCIRIMCI</h1>
+  </div>
 
   <!--###### MAIN HEADER ######-->
   <header class="main" id="header">
@@ -37,11 +44,11 @@
         <a class="button_schedule" href="#">Harmonogram</a>
         <a class="button_prices" href="#">Cennik</a>
         <a class="button_contact" href="#">Kontakt</a>
-        <a class="button_signUp" href="#">Zapisy</a>
+        <a class="button_signUp" href="#" id="header_form_button">Zapisy</a>
       </li>
     </ul>
     <img class="header" src="images/logoBig.png" alt="duże logo">
-    <a class="contact" href="#">Zapraszamy do kontaktu</a>
+    <a class="contact" href="#" id="header_contact_button">Zapraszamy do kontaktu</a>
   </header>
   <img class="fixedBackgroundPhoto" src="./images/fixedBackgroundPhoto.png" alt="tło" class="fixedBackground">
   <a class="scrollToTopButton"><i class="fas fa-arrow-down"></i></a>
@@ -61,7 +68,7 @@
       </ul>
     </div>
     <div class="danceStyles_chosen">
-      <div class="regular hipHop_disabled active">
+      <div class="regular hipHop_disabled active" id="lessons_hipHop">
         <h2>Hip Hop to rodzaj tańca, wymyślony przez członków kultury hip-hop, wymagający dobrych predyspozycji
           fizycznych,
           kondycji oraz dobrego poczucia rytmu.</h2>
@@ -72,11 +79,11 @@
             <p>Poziom zaawansowany, poniedziałek-środa 15:00 - 18:00</p>
           </div>
         </div>
-        <button class="button_teacher" id="button_signUp" href="#">Zapisz się na Hip-hop</button>
+        <button class="button_teacher" id="button_signUp1" href="#">Zapisz się na Hip-hop</button>
       </div>
 
 
-      <div class="regular breakDance_disabled">
+      <div class="regular breakDance_disabled" id="lessons_breakDance">
         <h2>Break dance to rodzaj specyficznego i unikatowego tańca z dużą liczbą elementów siłowo-sprawnościowych, oraz
           kroków
           wykonywanych „w parterze”, czyli rękami i nogami (a często całym ciałem) na ziemi.</h2>
@@ -87,11 +94,11 @@
             <p>Poziom zaawansowany, poniedziałek-środa 18:00 - 21:00</p>
           </div>
         </div>
-        <button class="button_teacher" id="button_signUp" href="#">Zapisz się na Break Dance</button>
+        <button class="button_teacher" id="button_signUp2" href="#">Zapisz się na Break Dance</button>
       </div>
 
 
-      <div class="regular jazz_disabled">
+      <div class="regular jazz_disabled" id="lessons_jazz">
         <h2> Jazz est gatunkiem zawierającym w sobie elementy baletu, tańca modern oraz tańca akrobatycznego. Podstawą
           są w
           nim jedynie dwa elementy: rytm i policentryzm. Jest
@@ -103,11 +110,11 @@
             <p>Poziom zaawansowany, czwartek-sobota 18:00 - 21:00</p>
           </div>
         </div>
-        <button class="button_teacher" id="button_signUp" href="#">Zapisz się na Jazz</button>
+        <button class="button_teacher" id="button_signUp3" href="#">Zapisz się na Jazz</button>
       </div>
 
 
-      <div class="regular balet_disabled">
+      <div class="regular balet_disabled" id="lessons_ballet">
         <h2>Balet to typ widowiska teatralnego, w którym głównym środkiem wyrazu jest
           taniec skomponowany przez choreografa i wykonywany przez tancerzy z towarzyszeniem muzyki, utwór
           choreograficzny.
@@ -119,7 +126,7 @@
             <p>Poziom zaawansowany, czwartek-sobota 15:00 - 18:00</p>
           </div>
         </div>
-        <button class="button_teacher" id="button_signUp" href="#">Zapisz się na balet</button>
+        <button class="button_teacher" id="button_signUp4" href="#">Zapisz się na balet</button>
       </div>
 
   </section>
