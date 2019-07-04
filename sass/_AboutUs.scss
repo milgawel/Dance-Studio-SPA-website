@@ -11,6 +11,7 @@ section.aboutUs {
     width: 60%;
     padding: 5vh 0;
     margin: 0 auto;
+    font-size: 1em;
   }
 
   div.danceStyles_menu {
@@ -26,12 +27,12 @@ section.aboutUs {
           border: 2px solid #EB0165;
           border-radius: 20px;
           font-family: 'Oswald', sans-serif;
-          font-size: 35px;
+          font-size: 1.5em;
           line-height: 50px;
           text-decoration: none;
           background-color: rgba(0, 0, 0, 0);
           color: rgba(255, 255, 255, 0.7);
-          padding: 5px 10px;
+          padding: 0px 10px;
           transition: color 0.3s;
         }
 
@@ -89,7 +90,7 @@ section.aboutUs {
           margin: auto 4vh;
 
           p {
-            font-size: 30px;
+            font-size: 1.3em;
             font-family: 'Oswald', sans-serif;
             color: rgba(255, 255, 255, 0.7);
             width: 100%;
@@ -103,7 +104,7 @@ section.aboutUs {
       border: 0px;
       position: relative;
       text-decoration: none;
-      font-size: 25px;
+      font-size: 1em;
       text-transform: uppercase;
       padding: 15px 25px;
       margin: 5vh auto;

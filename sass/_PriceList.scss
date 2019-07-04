@@ -14,7 +14,7 @@ section.cost {
     margin: 0 auto;
     padding-top: 7vh;
     color: rgba(255, 255, 255, 0.964);
-    font-size: 50px;
+    font-size: 2.2em;
     text-transform: uppercase;
     transition: .3s;
     cursor: default;
@@ -40,7 +40,7 @@ section.cost {
         color: white;
         display: flex;
         justify-content: center;
-        padding: 10px 15px;
+        padding: 5px 10px;
         font-size: 25px;
         border-radius: 50px;
         color: #000;
@@ -206,8 +206,17 @@ section.cost {
 
 @media(max-width:650px) {
   section.cost {
+    h1.cost {
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+
     div.price_list {
       div.price_position {
+        p {
+          padding: 4px 5px;
+        }
+
         p.price_name {
           margin-left: 4%;
           width: 60%;
@@ -230,7 +239,7 @@ section.cost {
 
 @media(max-width:360px) {
   section.cost {
-
+    height: 85vh;
 
     h1.cost {
       padding-top: 2vh;
