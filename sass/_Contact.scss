@@ -3,7 +3,6 @@ section.contact {
   height: 100vh;
   background-image: linear-gradient(to bottom, rgb(95, 18, 54), #2444DB);
 
-
   h1.contact {
     display: flex;
     justify-content: center;
@@ -17,6 +16,7 @@ section.contact {
     text-transform: uppercase;
     transition: .3s;
     cursor: default;
+    text-align: center;
   }
 
   div.contact_container {
@@ -62,5 +62,65 @@ section.contact {
     height: 65vh;
     background-color: red;
     margin: 2vh auto;
+  }
+}
+
+@media(max-width:1024px) {
+
+  section.contact {
+    height: 105vh;
+
+    h1.contact {
+      font-size: 2em;
+    }
+
+    div.contact_container {
+      flex-direction: column;
+    }
+
+    div.contact_data {
+      width: 90%;
+      height: 50vh;
+      flex-direction: column;
+
+      h2 {
+        font-size: 1.8em;
+      }
+
+      p {
+        font-size: 1.5em;
+        margin-bottom: 1vh;
+      }
+    }
+
+    #map {
+      width: 90%;
+      height: 35vh;
+      margin: 2vh auto;
+    }
+  }
+}
+
+@media(max-width:360px) {
+  section.contact {
+    margin-top: 10vh;
+
+    h1.contact {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media(max-width:320px) {
+  section.contact {
+    height: 115vh;
+
+    h1.contact {
+      font-size: 1.5em;
+    }
+
+    p {
+      text-align: center;
+    }
   }
 }

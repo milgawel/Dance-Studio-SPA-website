@@ -1,11 +1,11 @@
 section.aboutUs {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
-  // border: 3px solid yellow;
+
 
   h2 {
     text-transform: uppercase;
-    text-align: justify;
+    text-align: center;
     text-justify: inter-word;
     color: rgba(255, 255, 255, 0.774);
     width: 60%;
@@ -72,7 +72,7 @@ section.aboutUs {
         display: flex;
         justify-content: center;
         width: 60%;
-        margin: 5vh auto;
+        margin: 2vh auto;
         height: 20vh;
         display: flex;
 
@@ -86,7 +86,7 @@ section.aboutUs {
           flex-direction: column;
           justify-content: space-around;
           height: 80%;
-          margin: auto 5vh;
+          margin: auto 4vh;
 
           p {
             font-size: 30px;
@@ -146,7 +146,182 @@ section.aboutUs {
 
 img.fixedBackgroundPhoto {
   position: fixed;
+  width: 100%;
+  height: 100vh;
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+
+
+
+// ###############    MEDIA QUERIES   #############
+// ###############    MEDIA QUERIES   #############
+// ###############    MEDIA QUERIES   #############
+
+
+@media(max-width:1024px) {
+  section#one.aboutUs {
+    height: 90vh;
+
+    h2 {
+      text-align: center;
+      width: 85%;
+      font-size: 1.3em;
+    }
+
+    div.danceStyles_menu {
+      ul {
+        li {
+          width: 90%;
+
+          button {
+            font-size: 2em;
+            line-height: 1.7em;
+          }
+        }
+      }
+    }
+
+    div.danceStyles_chosen {
+      h2 {
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        font-size: 1.3em;
+      }
+
+      div.teacher {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 2vh auto;
+        height: 20vh;
+        display: flex;
+      }
+
+      button.button_teacher {
+        margin-top: 8vh;
+      }
+    }
+  }
+}
+
+@media(max-width:550px) {
+  section#one.aboutUs {
+    height: 90vh;
+
+    h2 {
+      text-align: center;
+      width: 90%;
+      font-size: 1em;
+    }
+
+    div.danceStyles_menu {
+      ul {
+        li {
+          width: 90%;
+
+          button {
+            font-size: 1.3em;
+            line-height: 1.7em;
+          }
+        }
+      }
+    }
+
+    div.danceStyles_chosen {
+      h2 {
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        font-size: 1em;
+      }
+
+      div.regular {
+
+        div.teacher {
+          display: flex;
+          justify-content: center;
+          width: 90%;
+          margin: 1vh auto;
+          height: 20vh;
+          display: flex;
+
+          div.teacher_description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 80%;
+            margin: auto 4vh;
+
+            p {
+              font-size: 1.2em;
+              font-family: 'Oswald', sans-serif;
+              color: rgba(255, 255, 255, 0.7);
+              width: 100%;
+            }
+          }
+        }
+
+        button.button_teacher {
+          margin-top: 8vh;
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:350px) {
+  section#one.aboutUs {
+    h2 {
+      width: 100%;
+      font-size: 0.9em;
+      padding: 4vh 0;
+    }
+
+    div.danceStyles_menu {
+      ul {
+        li {
+          width: 95%;
+
+          button {
+            font-size: 1.1em;
+            line-height: 1.7em;
+          }
+        }
+      }
+    }
+
+    div.danceStyles_chosen {
+      h2 {
+        width: 95%;
+        font-size: 0.9em;
+      }
+
+      div.regular {
+        div.teacher {
+          width: 90%;
+
+          div.teacher_description {
+
+
+            margin: auto 1vh;
+
+            p {
+              font-size: 1.1em;
+              font-family: 'Oswald', sans-serif;
+              color: rgba(255, 255, 255, 0.7);
+              width: 100%;
+            }
+          }
+        }
+
+        button.button_teacher {
+          margin-top: 8vh;
+          font-size: 1em;
+        }
+      }
+    }
+  }
 }

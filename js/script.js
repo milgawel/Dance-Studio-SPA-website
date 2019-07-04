@@ -56,8 +56,9 @@ button_contact.addEventListener('click', function scrollToElement() {
 scrollToTopButton.addEventListener('click', function scrollToElement() {
   window.scrollTo(0, 0);
 });
-header_contact_button.addEventListener('click', function scrollToElement() {
+header_contact_button.addEventListener('click', function scrollToElement(e) {
   window.scrollTo(0, 396 * window.innerHeight / 100);
+  e.preventDefault();
 });
 
 const navBar_button_aboutUs = document.querySelector('.navBar_button_aboutUs');
@@ -77,12 +78,12 @@ navBar_button_schedule.addEventListener('click', function scrollToElement(e) {
 });
 
 navBar_button_prices.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 300 * window.innerHeight / 100);
+  window.scrollTo(0, 292 * window.innerHeight / 100);
   e.preventDefault();
 });
 
 navBar_button_contact.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 396 * window.innerHeight / 100);
+  window.scrollTo(0, 387 * window.innerHeight / 100);
   e.preventDefault();
 });
 // ######### ABOUT US #############
@@ -178,16 +179,16 @@ $('body').mousemove(function (e) {
 
 $('body').mousemove(function (e) {
   let valueX = (e.pageX * -0.5 / -25 - 40);
-  let valueY = (e.pageY * -0.5 / -25 - 50);
+  let valueY = (e.pageY * -0.5 / -25 - 100);
 
   object5.css({
-    'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(20deg)'
+    'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(-20deg)'
   });
 });
 
 $('body').mousemove(function (e) {
-  let valueX = (e.pageX * -0.5 / -35 - 20);
-  let valueY = (e.pageY * -0.5 / -35 - 40);
+  let valueX = (e.pageX * -0.5 / +35);
+  let valueY = (e.pageY * -0.5 / +35);
 
   object6.css({
     'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(20deg)'
@@ -195,8 +196,8 @@ $('body').mousemove(function (e) {
 });
 
 $('body').mousemove(function (e) {
-  let valueX = (e.pageX * -0.5 / 15);
-  let valueY = (e.pageY * -0.5 / 15 + 70);
+  let valueX = (e.pageX * -0.5 / 15 + 40);
+  let valueY = (e.pageY * -0.5 / 15 + 100);
 
   object7.css({
     'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(20deg)'
@@ -205,7 +206,7 @@ $('body').mousemove(function (e) {
 
 $('body').mousemove(function (e) {
   let valueX = (e.pageX * -0.5 / -10 - 70);
-  let valueY = (e.pageY * -0.5 / -10 - 80);
+  let valueY = (e.pageY * -0.5 / -10 - 180);
 
   object8.css({
     'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(20deg)'

@@ -111,19 +111,19 @@ section.cost {
   div#icon5 {
     position: absolute;
     top: 315vh;
-    left: 70vw;
+    left: 10vw;
   }
 
   div#icon6 {
     position: absolute;
-    top: 395vh;
-    left: 30vw;
+    top: 335vh;
+    left: 50vw;
   }
 
   div#icon7 {
     position: absolute;
     top: 315vh;
-    left: 30vw;
+    left: 50vw;
   }
 
   div#icon8 {
@@ -132,4 +132,108 @@ section.cost {
     left: 80vw;
   }
 
+}
+
+// ############ MEDIA QUERIES ##########
+// ############ MEDIA QUERIES ##########
+// ############ MEDIA QUERIES ##########
+// ############ MEDIA QUERIES ##########
+
+@media(max-width:1283px) {
+  section.cost {
+    div.price_list {
+      div.price_position {
+        p {
+          font-size: calc(1.1em);
+        }
+
+        p.price_value {
+          width: 20%
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:1024px) {
+  section.cost {
+    height: 70vh;
+  }
+}
+
+@media(max-width:767px) {
+  section.cost {
+    height: 80vh;
+
+    h1.cost {
+      padding-top: 5vh;
+    }
+
+    div.price_list {
+      width: 100%;
+
+      div.price_position {
+
+        p.price_name {
+          margin-left: 15%;
+          width: 40%;
+        }
+
+        p {
+          font-size: calc(1.1em);
+          padding: 10px 5px;
+        }
+
+        p.price_value {
+          width: 20%;
+        }
+      }
+    }
+
+    div#icon1,
+    div#icon2,
+    div#icon3,
+    div#icon4,
+    div#icon5,
+    div#icon6,
+    div#icon7,
+    div#icon8 {
+      display: none;
+    }
+  }
+}
+
+
+@media(max-width:650px) {
+  section.cost {
+    div.price_list {
+      div.price_position {
+        p.price_name {
+          margin-left: 4%;
+          width: 60%;
+          font-size: 1em;
+        }
+
+        p.price_value {
+          width: 22%;
+          margin-right: 4%;
+          font-size: 1em;
+        }
+
+        p.spacer {
+          width: 1%;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:360px) {
+  section.cost {
+
+
+    h1.cost {
+      padding-top: 2vh;
+    }
+  }
 }
