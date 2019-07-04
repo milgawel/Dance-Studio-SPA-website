@@ -242,7 +242,15 @@ section.cost {
 
 @media(max-width:360px) {
   section.cost {
+    h1.cost {
+      padding-top: 2vh;
+    }
+  }
+}
 
+@media(max-width:330px) {
+  section.cost {
+    height: 79vh;
 
     h1.cost {
       padding-top: 2vh;
