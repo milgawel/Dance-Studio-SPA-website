@@ -41,7 +41,7 @@ section.cost {
         display: flex;
         justify-content: center;
         padding: 5px 10px;
-        font-size: 25px;
+        font-size: 20px;
         border-radius: 50px;
         color: #000;
         font-weight: bold;
@@ -144,7 +144,7 @@ section.cost {
     div.price_list {
       div.price_position {
         p {
-          font-size: calc(1.1em);
+          font-size: 1em;
         }
 
         p.price_value {
@@ -158,6 +158,17 @@ section.cost {
 @media(max-width:1024px) {
   section.cost {
     height: 70vh;
+  }
+
+  div#icon1,
+  div#icon2,
+  div#icon3,
+  div#icon4,
+  div#icon5,
+  div#icon6,
+  div#icon7,
+  div#icon8 {
+    display: none;
   }
 }
 
@@ -190,22 +201,14 @@ section.cost {
       }
     }
 
-    div#icon1,
-    div#icon2,
-    div#icon3,
-    div#icon4,
-    div#icon5,
-    div#icon6,
-    div#icon7,
-    div#icon8 {
-      display: none;
-    }
   }
 }
 
 
 @media(max-width:650px) {
   section.cost {
+    height: 73vh;
+
     h1.cost {
       font-size: 2em;
       letter-spacing: 2px;
@@ -239,7 +242,7 @@ section.cost {
 
 @media(max-width:360px) {
   section.cost {
-    height: 85vh;
+
 
     h1.cost {
       padding-top: 2vh;
