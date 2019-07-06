@@ -163,7 +163,7 @@ img.fixedBackgroundPhoto {
 
 
 @media(max-width:1024px) {
-  section#one.aboutUs {
+  section.aboutUs {
     height: 90vh;
 
     h2 {
@@ -209,7 +209,7 @@ img.fixedBackgroundPhoto {
 }
 
 @media(max-width:550px) {
-  section#one.aboutUs {
+  section.aboutUs {
     height: 90vh;
 
     h2 {
@@ -273,8 +273,8 @@ img.fixedBackgroundPhoto {
   }
 }
 
-@media(max-width:350px) {
-  section#one.aboutUs {
+@media(max-width:330px) {
+  section.aboutUs {
     h2 {
       width: 100%;
       font-size: 0.9em;
@@ -283,8 +283,9 @@ img.fixedBackgroundPhoto {
 
     div.danceStyles_menu {
       ul {
+
         li {
-          width: 95%;
+          width: 100%;
 
           button {
             font-size: 1.1em;

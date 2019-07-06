@@ -27,6 +27,58 @@ document.addEventListener("scroll", function () {
     btnToTop.style.display = "block";
 });
 
+// ###########   BURGER MENU   #############
+
+const burger_open = document.getElementById("burger_button_open");
+const burger_close = document.getElementById("burger_button_close");
+const burger_menu = document.querySelector(".burger_menu");
+
+function function_burger_open() {
+  burger_menu.classList.add("active")
+}
+
+function function_burger_close() {
+  burger_menu.classList.remove("active")
+}
+
+burger_open.addEventListener('click', function_burger_open);
+burger_close.addEventListener('click', function_burger_close);
+
+const aboutUs = document.getElementById("aboutUs");
+const schedule = document.getElementById("schedule");
+const cost = document.getElementById("cost");
+const contact = document.getElementById("contact");
+
+const burger_aboutUs = document.getElementById("burger_aboutUs");
+const burger_schedule = document.getElementById("burger_schedule");
+const burger_cost = document.getElementById("burger_cost");
+const burger_contact = document.getElementById("burger_contact");
+
+burger_aboutUs.addEventListener('click', function (e) {
+  window.scrollTo(0, aboutUs.offsetTop);
+  e.preventDefault();
+  burger_menu.classList.remove("active");
+});
+
+burger_schedule.addEventListener('click', function (e) {
+  window.scrollTo(0, schedule.offsetTop);
+  e.preventDefault();
+  burger_menu.classList.remove("active");
+});
+burger_cost.addEventListener('click', function (e) {
+  window.scrollTo(0, cost.offsetTop);
+  e.preventDefault();
+  burger_menu.classList.remove("active");
+});
+burger_contact.addEventListener('click', function (e) {
+  window.scrollTo(0, contact.offsetTop);
+  e.preventDefault();
+  burger_menu.classList.remove("active");
+});
+
+
+
+
 // ###########   NAVIGATION   #############
 
 const button_aboutUs = document.querySelector('.button_aboutUs');
@@ -37,26 +89,27 @@ const button_signUp = document.querySelector('.button_signUp');
 const scrollToTopButton = document.querySelector('.scrollToTopButton');
 const header_contact_button = document.getElementById('header_contact_button')
 
-button_aboutUs.addEventListener('click', function scrollToElement() {
+
+button_aboutUs.addEventListener('click', function () {
   window.scrollTo(0, 89 * window.innerHeight / 100);
 });
 
-button_schedule.addEventListener('click', function scrollToElement() {
+button_schedule.addEventListener('click', function () {
   window.scrollTo(0, 195 * window.innerHeight / 100);
 });
 
-button_prices.addEventListener('click', function scrollToElement() {
+button_prices.addEventListener('click', function () {
   window.scrollTo(0, 296 * window.innerHeight / 100);
 });
 
-button_contact.addEventListener('click', function scrollToElement() {
+button_contact.addEventListener('click', function () {
   window.scrollTo(0, 396 * window.innerHeight / 100);
 });
 
-scrollToTopButton.addEventListener('click', function scrollToElement() {
+scrollToTopButton.addEventListener('click', function () {
   window.scrollTo(0, 0);
 });
-header_contact_button.addEventListener('click', function scrollToElement(e) {
+header_contact_button.addEventListener('click', function (e) {
   window.scrollTo(0, 396 * window.innerHeight / 100);
   e.preventDefault();
 });
