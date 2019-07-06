@@ -115,6 +115,37 @@ section.contact {
     }
 
     div.contact_container {
+
+
+      div.contact_data {
+        h2 {
+          font-size: 1.5em;
+        }
+
+        p {
+          font-size: 1em;
+        }
+
+
+      }
+    }
+  }
+}
+
+@media(max-width:320px) {
+  section.contact {
+    height: 100vh;
+
+    h1.contact {
+      font-size: 1.5em;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    div.contact_container {
+
       div.contact_data {
         h2 {
           font-size: 1.5em;
