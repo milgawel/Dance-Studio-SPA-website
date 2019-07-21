@@ -95,22 +95,22 @@ button_aboutUs.addEventListener('click', function () {
 });
 
 button_schedule.addEventListener('click', function () {
-  window.scrollTo(0, 195 * window.innerHeight / 100);
+  window.scrollTo(0, 185 * window.innerHeight / 100);
 });
 
 button_prices.addEventListener('click', function () {
-  window.scrollTo(0, 296 * window.innerHeight / 100);
+  window.scrollTo(0, 282 * window.innerHeight / 100);
 });
 
 button_contact.addEventListener('click', function () {
-  window.scrollTo(0, 396 * window.innerHeight / 100);
+  window.scrollTo(0, 379 * window.innerHeight / 100);
 });
 
 scrollToTopButton.addEventListener('click', function () {
   window.scrollTo(0, 0);
 });
 header_contact_button.addEventListener('click', function (e) {
-  window.scrollTo(0, 396 * window.innerHeight / 100);
+  window.scrollTo(0, 379 * window.innerHeight / 100);
   e.preventDefault();
 });
 
@@ -126,17 +126,17 @@ navBar_button_aboutUs.addEventListener('click', function scrollToElement(e) {
 });
 
 navBar_button_schedule.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 195 * window.innerHeight / 100);
+  window.scrollTo(0, 185 * window.innerHeight / 100);
   e.preventDefault();
 });
 
 navBar_button_prices.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 292 * window.innerHeight / 100);
+  window.scrollTo(0, 282 * window.innerHeight / 100);
   e.preventDefault();
 });
 
 navBar_button_contact.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 387 * window.innerHeight / 100);
+  window.scrollTo(0, 379 * window.innerHeight / 100);
   e.preventDefault();
 });
 // ######### ABOUT US #############
