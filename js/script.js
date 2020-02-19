@@ -1,10 +1,10 @@
 // #######    HEADER     #########
 
-$('header').mousemove(function (e) {
-  let moveX = (e.pageX * -0.5 / 15 - 25);
-  let moveY = (e.pageY * -0.5 / 15 - 255);
-  $(this).css('background-position', moveX + 'px ' + moveY + 'px')
-})
+$("header").mousemove(function(e) {
+  let moveX = (e.pageX * -0.5) / 15 - 25;
+  let moveY = (e.pageY * -0.5) / 15 - 255;
+  $(this).css("background-position", moveX + "px " + moveY + "px");
+});
 
 // ##### FIXED NAVBAR #####
 
@@ -12,19 +12,15 @@ const body = document.body;
 const element = document.getElementById("navBar");
 const btnToTop = document.querySelector(".scrollToTopButton");
 
-document.addEventListener("scroll", function () {
+document.addEventListener("scroll", function() {
   let scrollAmt = window.pageYOffset || document.documentElement.scrollTop;
-  if (window.innerHeight / 1.2 >= scrollAmt)
-    element.style.display = "none";
-  else
-    element.style.display = "block";
+  if (window.innerHeight / 1.2 >= scrollAmt) element.style.display = "none";
+  else element.style.display = "block";
 });
-document.addEventListener("scroll", function () {
+document.addEventListener("scroll", function() {
   let scrollAmt = window.pageYOffset || document.documentElement.scrollTop;
-  if (window.innerHeight / 2 >= scrollAmt)
-    btnToTop.style.display = "none";
-  else
-    btnToTop.style.display = "block";
+  if (window.innerHeight / 2 >= scrollAmt) btnToTop.style.display = "none";
+  else btnToTop.style.display = "block";
 });
 
 // ###########   BURGER MENU   #############
@@ -34,15 +30,15 @@ const burger_close = document.getElementById("burger_button_close");
 const burger_menu = document.querySelector(".burger_menu");
 
 function function_burger_open() {
-  burger_menu.classList.add("active")
+  burger_menu.classList.add("active");
 }
 
 function function_burger_close() {
-  burger_menu.classList.remove("active")
+  burger_menu.classList.remove("active");
 }
 
-burger_open.addEventListener('click', function_burger_open);
-burger_close.addEventListener('click', function_burger_close);
+burger_open.addEventListener("click", function_burger_open);
+burger_close.addEventListener("click", function_burger_close);
 
 const aboutUs = document.getElementById("aboutUs");
 const schedule = document.getElementById("schedule");
@@ -54,100 +50,98 @@ const burger_schedule = document.getElementById("burger_schedule");
 const burger_cost = document.getElementById("burger_cost");
 const burger_contact = document.getElementById("burger_contact");
 
-burger_aboutUs.addEventListener('click', function (e) {
+burger_aboutUs.addEventListener("click", function(e) {
   window.scrollTo(0, aboutUs.offsetTop);
   e.preventDefault();
   burger_menu.classList.remove("active");
 });
 
-burger_schedule.addEventListener('click', function (e) {
+burger_schedule.addEventListener("click", function(e) {
   window.scrollTo(0, schedule.offsetTop);
   e.preventDefault();
   burger_menu.classList.remove("active");
 });
-burger_cost.addEventListener('click', function (e) {
+burger_cost.addEventListener("click", function(e) {
   window.scrollTo(0, cost.offsetTop);
   e.preventDefault();
   burger_menu.classList.remove("active");
 });
-burger_contact.addEventListener('click', function (e) {
+burger_contact.addEventListener("click", function(e) {
   window.scrollTo(0, contact.offsetTop);
   e.preventDefault();
   burger_menu.classList.remove("active");
 });
 
-
-
-
 // ###########   NAVIGATION   #############
 
-const button_aboutUs = document.querySelector('.button_aboutUs');
-const button_schedule = document.querySelector('.button_schedule');
-const button_prices = document.querySelector('.button_prices');
-const button_contact = document.querySelector('.button_contact');
-const button_signUp = document.querySelector('.button_signUp');
-const scrollToTopButton = document.querySelector('.scrollToTopButton');
-const header_contact_button = document.getElementById('header_contact_button')
+const button_aboutUs = document.querySelector(".button_aboutUs");
+const button_schedule = document.querySelector(".button_schedule");
+const button_prices = document.querySelector(".button_prices");
+const button_contact = document.querySelector(".button_contact");
+const button_signUp = document.querySelector(".button_signUp");
+const scrollToTopButton = document.querySelector(".scrollToTopButton");
+const header_contact_button = document.getElementById("header_contact_button");
 
-
-button_aboutUs.addEventListener('click', function () {
-  window.scrollTo(0, 89 * window.innerHeight / 100);
+button_aboutUs.addEventListener("click", function() {
+  window.scrollTo(0, (89 * window.innerHeight) / 100);
 });
 
-button_schedule.addEventListener('click', function () {
-  window.scrollTo(0, 185 * window.innerHeight / 100);
+button_schedule.addEventListener("click", function() {
+  window.scrollTo(0, (185 * window.innerHeight) / 100);
 });
 
-button_prices.addEventListener('click', function () {
-  window.scrollTo(0, 282 * window.innerHeight / 100);
+button_prices.addEventListener("click", function() {
+  window.scrollTo(0, (282 * window.innerHeight) / 100);
 });
 
-button_contact.addEventListener('click', function () {
-  window.scrollTo(0, 379 * window.innerHeight / 100);
+button_contact.addEventListener("click", function() {
+  window.scrollTo(0, (379 * window.innerHeight) / 100);
 });
 
-scrollToTopButton.addEventListener('click', function () {
+scrollToTopButton.addEventListener("click", function() {
   window.scrollTo(0, 0);
 });
-header_contact_button.addEventListener('click', function (e) {
-  window.scrollTo(0, 379 * window.innerHeight / 100);
+header_contact_button.addEventListener("click", function(e) {
+  window.scrollTo(0, (379 * window.innerHeight) / 100);
   e.preventDefault();
 });
 
-const navBar_button_aboutUs = document.querySelector('.navBar_button_aboutUs');
-const navBar_button_schedule = document.querySelector('.navBar_button_schedule');
-const navBar_button_prices = document.querySelector('.navBar_button_prices');
-const navBar_button_contact = document.querySelector('.navBar_button_contact');
-const navBar_button_signUp = document.querySelector('.navBar_button_signUp');
+const navBar_button_aboutUs = document.querySelector(".navBar_button_aboutUs");
+const navBar_button_schedule = document.querySelector(
+  ".navBar_button_schedule"
+);
+const navBar_button_prices = document.querySelector(".navBar_button_prices");
+const navBar_button_contact = document.querySelector(".navBar_button_contact");
+const navBar_button_signUp = document.querySelector(".navBar_button_signUp");
 
-navBar_button_aboutUs.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 89 * window.innerHeight / 100);
+navBar_button_aboutUs.addEventListener("click", function scrollToElement(e) {
+  window.scrollTo(0, (89 * window.innerHeight) / 100);
   e.preventDefault();
 });
 
-navBar_button_schedule.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 185 * window.innerHeight / 100);
+navBar_button_schedule.addEventListener("click", function scrollToElement(e) {
+  window.scrollTo(0, (185 * window.innerHeight) / 100);
   e.preventDefault();
 });
 
-navBar_button_prices.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 282 * window.innerHeight / 100);
+navBar_button_prices.addEventListener("click", function scrollToElement(e) {
+  window.scrollTo(0, (282 * window.innerHeight) / 100);
   e.preventDefault();
 });
 
-navBar_button_contact.addEventListener('click', function scrollToElement(e) {
-  window.scrollTo(0, 379 * window.innerHeight / 100);
+navBar_button_contact.addEventListener("click", function scrollToElement(e) {
+  window.scrollTo(0, (379 * window.innerHeight) / 100);
   e.preventDefault();
 });
 // ######### ABOUT US #############
-const lessons_hipHop = document.getElementById('lessons_hipHop');
-const lessons_breakDance = document.getElementById('lessons_breakDance');
-const lessons_jazz = document.getElementById('lessons_jazz');
-const lessons_ballet = document.getElementById('lessons_ballet');
-const button_hipHop = document.getElementById('hipHop');
-const button_breakDance = document.getElementById('breakDance');
-const button_jazz = document.getElementById('jazz');
-const button_ballet = document.getElementById('balet');
+const lessons_hipHop = document.getElementById("lessons_hipHop");
+const lessons_breakDance = document.getElementById("lessons_breakDance");
+const lessons_jazz = document.getElementById("lessons_jazz");
+const lessons_ballet = document.getElementById("lessons_ballet");
+const button_hipHop = document.getElementById("hipHop");
+const button_breakDance = document.getElementById("breakDance");
+const button_jazz = document.getElementById("jazz");
+const button_ballet = document.getElementById("balet");
 
 function addHipHop() {
   lessons_hipHop.classList.add("active");
@@ -156,7 +150,7 @@ function addHipHop() {
   lessons_ballet.classList.remove("active");
 }
 
-button_hipHop.addEventListener('click', addHipHop);
+button_hipHop.addEventListener("click", addHipHop);
 
 function addBreakDance() {
   lessons_hipHop.classList.remove("active");
@@ -165,7 +159,7 @@ function addBreakDance() {
   lessons_ballet.classList.remove("active");
 }
 
-button_breakDance.addEventListener('click', addBreakDance);
+button_breakDance.addEventListener("click", addBreakDance);
 
 function addJazz() {
   lessons_hipHop.classList.remove("active");
@@ -174,7 +168,7 @@ function addJazz() {
   lessons_ballet.classList.remove("active");
 }
 
-button_jazz.addEventListener('click', addJazz);
+button_jazz.addEventListener("click", addJazz);
 
 function addBallet() {
   lessons_hipHop.classList.remove("active");
@@ -183,86 +177,85 @@ function addBallet() {
   lessons_ballet.classList.add("active");
 }
 
-button_ballet.addEventListener('click', addBallet);
-
+button_ballet.addEventListener("click", addBallet);
 
 // ######### PRICE LIST #########
 
-let object1 = $('#icon1');
-let object2 = $('#icon2');
-let object3 = $('#icon3');
-let object4 = $('#icon4');
-let object5 = $('#icon5');
-let object6 = $('#icon6');
-let object7 = $('#icon7');
-let object8 = $('#icon8');
+let object1 = $("#icon1");
+let object2 = $("#icon2");
+let object3 = $("#icon3");
+let object4 = $("#icon4");
+let object5 = $("#icon5");
+let object6 = $("#icon6");
+let object7 = $("#icon7");
+let object8 = $("#icon8");
 
-$('body').mousemove(function (e) {
-  let valueX = (e.pageX * -0.5 / 15 + 15);
-  let valueY = (e.pageY * -0.5 / 15 + 100);
+$("body").mousemove(function(e) {
+  let valueX = (e.pageX * -0.5) / 15 + 15;
+  let valueY = (e.pageY * -0.5) / 15 + 100;
   object1.css({
-    'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(20deg)'
+    transform: "translate3d(" + valueX + "px," + valueY + "px,0) rotate(20deg)"
   });
 });
 
-$('body').mousemove(function (e) {
-  let valueX = (e.pageX * -0.5 / 15 + 25);
-  let valueY = (e.pageY * -0.51 / 100);
+$("body").mousemove(function(e) {
+  let valueX = (e.pageX * -0.5) / 15 + 25;
+  let valueY = (e.pageY * -0.51) / 100;
 
   object2.css({
-    'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(20deg)'
+    transform: "translate3d(" + valueX + "px," + valueY + "px,0) rotate(20deg)"
   });
 });
 
-$('body').mousemove(function (e) {
-  let valueX = (e.pageX * 0.5 / -15 + 30);
-  let valueY = (e.pageY * 0.5 / -5 + 250);
+$("body").mousemove(function(e) {
+  let valueX = (e.pageX * 0.5) / -15 + 30;
+  let valueY = (e.pageY * 0.5) / -5 + 250;
   object3.css({
-    'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(20deg)'
+    transform: "translate3d(" + valueX + "px," + valueY + "px,0) rotate(20deg)"
   });
 });
 
-$('body').mousemove(function (e) {
-  let valueX = (e.pageX * -0.5 / 25 + 50);
-  let valueY = (e.pageY * -0.5 / 25 + 50);
+$("body").mousemove(function(e) {
+  let valueX = (e.pageX * -0.5) / 25 + 50;
+  let valueY = (e.pageY * -0.5) / 25 + 50;
   object4.css({
-    'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(20deg)'
+    transform: "translate3d(" + valueX + "px," + valueY + "px,0) rotate(20deg)"
   });
 });
 
-$('body').mousemove(function (e) {
-  let valueX = (e.pageX * -0.5 / -25 - 40);
-  let valueY = (e.pageY * -0.5 / -25 - 100);
+$("body").mousemove(function(e) {
+  let valueX = (e.pageX * -0.5) / -25 - 40;
+  let valueY = (e.pageY * -0.5) / -25 - 100;
 
   object5.css({
-    'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(-20deg)'
+    transform: "translate3d(" + valueX + "px," + valueY + "px,0) rotate(-20deg)"
   });
 });
 
-$('body').mousemove(function (e) {
-  let valueX = (e.pageX * -0.5 / +35);
-  let valueY = (e.pageY * -0.5 / +35);
+$("body").mousemove(function(e) {
+  let valueX = (e.pageX * -0.5) / +35;
+  let valueY = (e.pageY * -0.5) / +35;
 
   object6.css({
-    'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(20deg)'
+    transform: "translate3d(" + valueX + "px," + valueY + "px,0) rotate(20deg)"
   });
 });
 
-$('body').mousemove(function (e) {
-  let valueX = (e.pageX * -0.5 / 15 + 40);
-  let valueY = (e.pageY * -0.5 / 15 + 100);
+$("body").mousemove(function(e) {
+  let valueX = (e.pageX * -0.5) / 15 + 40;
+  let valueY = (e.pageY * -0.5) / 15 + 100;
 
   object7.css({
-    'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(20deg)'
+    transform: "translate3d(" + valueX + "px," + valueY + "px,0) rotate(20deg)"
   });
 });
 
-$('body').mousemove(function (e) {
-  let valueX = (e.pageX * -0.5 / -10 - 70);
-  let valueY = (e.pageY * -0.5 / -10 - 180);
+$("body").mousemove(function(e) {
+  let valueX = (e.pageX * -0.5) / -10 - 70;
+  let valueY = (e.pageY * -0.5) / -10 - 180;
 
   object8.css({
-    'transform': 'translate3d(' + valueX + 'px,' + valueY + 'px,0) rotate(20deg)'
+    transform: "translate3d(" + valueX + "px," + valueY + "px,0) rotate(20deg)"
   });
 });
 
@@ -273,11 +266,10 @@ function initMap() {
     lat: 50.075605,
     lng: 20.035321
   };
-  let map = new google.maps.Map(
-    document.getElementById('map'), {
-      zoom: 14,
-      center: studio
-    });
+  let map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: studio
+  });
   var marker = new google.maps.Marker({
     position: studio,
     map: map
@@ -285,17 +277,19 @@ function initMap() {
 }
 // ######## ENROLLMENT FORM ##########
 
-const header_form_button_test = document.getElementById('header_form_button');
-const blur = document.getElementById('blur_background');
-const form = document.getElementById('form');
-const form_button_close = document.getElementById('form_button_close');
+const header_form_button_test = document.getElementById("header_form_button");
+const blur = document.getElementById("blur_background");
+const form = document.getElementById("form");
+const form_button_close = document.getElementById("form_button_close");
 
-const fixed_navbar_button_form = document.getElementById('fixed_navbar_button_form');
+const fixed_navbar_button_form = document.getElementById(
+  "fixed_navbar_button_form"
+);
 
-const button_signUp1 = document.getElementById('button_signUp1');
-const button_signUp2 = document.getElementById('button_signUp2');
-const button_signUp3 = document.getElementById('button_signUp3');
-const button_signUp4 = document.getElementById('button_signUp4');
+const button_signUp1 = document.getElementById("button_signUp1");
+const button_signUp2 = document.getElementById("button_signUp2");
+const button_signUp3 = document.getElementById("button_signUp3");
+const button_signUp4 = document.getElementById("button_signUp4");
 
 function openForm(e) {
   blur.classList.add("active");
@@ -304,21 +298,20 @@ function openForm(e) {
 }
 
 function closeForm(e) {
-  blur.classList.remove('active');
-  form.classList.remove('active');
+  blur.classList.remove("active");
+  form.classList.remove("active");
   e.preventDefault();
 }
 
-header_form_button_test.addEventListener('click', openForm);
-form_button_close.addEventListener('click', closeForm);
+header_form_button_test.addEventListener("click", openForm);
+form_button_close.addEventListener("click", closeForm);
 
-button_signUp1.addEventListener('click', openForm);
-button_signUp2.addEventListener('click', openForm);
-button_signUp3.addEventListener('click', openForm);
-button_signUp4.addEventListener('click', openForm);
-fixed_navbar_button_form.addEventListener('click', openForm);
-blur.addEventListener('click', closeForm);
-
+button_signUp1.addEventListener("click", openForm);
+button_signUp2.addEventListener("click", openForm);
+button_signUp3.addEventListener("click", openForm);
+button_signUp4.addEventListener("click", openForm);
+fixed_navbar_button_form.addEventListener("click", openForm);
+blur.addEventListener("click", closeForm);
 
 // // ##########
 
